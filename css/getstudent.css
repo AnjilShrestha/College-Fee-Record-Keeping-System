@@ -1,0 +1,54 @@
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px; 
+}
+.Form {
+    width: 100%;
+    margin:10 0 0 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.Form form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Form .search-row, .Form .form-row {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.Form label {
+    margin-right: 5px;
+}
+.Form select, .Form input[type="submit"] {
+    margin-left: 5px;
+}
+.Form .err-msg {
+    color: red;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+input[type="submit"] {
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.err-msg {
+    color: red;
+    font-size: 14px;
+}
+
+        

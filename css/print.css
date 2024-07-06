@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f4f4f4;
+}
+.bill {  
+    margin: auto;
+    padding: 20px;
+    background: white;
+}
+.bill-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.bill-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.student-details div {
+    margin-bottom: 10px;
+}
+.student-details .details-left, 
+.student-details .details-right {
+    display: inline-block;
+    width: 48%;
+    padding: 5px 0;
+}
+.student-details .details-right {
+    text-align: right;
+}
+.student-details .dotted-underline {
+    border-bottom: 1px dotted #000;
+    padding-bottom: 2px;
+}
+.bill-details, .bill-items, .bill-summary {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+.bill-details th, .bill-details td,
+.bill-items th, .bill-items td,
+.bill-summary th, .bill-summary td {
+    padding: 10px;
+    border: 1px solid black;
+}
+.bill-items th {
+    background: #f4f4f4;
+}
+.bill-summary {
+    float: right;
+    width: 40%;
+}
+.bill-summary td {
+    text-align: right;
+}
+.print-button {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+.print-button:hover {
+    background: #0056b3;
+}

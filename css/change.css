@@ -1,0 +1,58 @@
+.row-c1 {
+    margin-top: 60px;
+}
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.change {
+    display: flex;
+    justify-content: center;
+}
+.change-row {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.change h3 {
+    text-align: center;
+}
+  
+.change form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.change form div {
+    margin-bottom: 15px;
+}
+  
+.change form label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+.change form input[type="password"] {
+    width: 99%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.change form .error-msg {
+    color: red;
+    font-size: 14px;
+}
+  
+.change form input[type="submit"] {
+    width: 100px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.change form input[type="submit"]:hover {
+    background-color: #0056b3;
+}

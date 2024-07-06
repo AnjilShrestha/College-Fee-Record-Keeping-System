@@ -1,0 +1,33 @@
+.column {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.column:hover {
+    transform: translateY(-5px);
+}
+.card-content {
+    padding: 20px;
+}
+.content-data {
+    font-size: 2em;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+.content-heading {
+    font-size: 1em;
+    color: #888;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover .column {
+    background-color: #f9f9f9;
+}

@@ -1,0 +1,126 @@
+.add {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content-left {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.content-left label,
+.content-left span {
+  margin-right: 10px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: scroll;
+}
+th,
+td {
+  padding: 5px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+th {
+  background-color: #f0f0f0;
+}
+.content-center {
+  overflow-x: auto;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.search-bar {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.content-right {
+  margin-left: auto;
+}
+.delete-btn,.edit-btn,.view-btn,.active-btn{
+  width: 80px;
+  padding: 10px;
+  margin: 2%;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+.delete-btn{
+  background-color: rgb(218, 35, 35);
+}
+.edit-btn{
+  background-color: #4caf50;
+}
+.view-btn{
+  background-color: blue;
+}
+.search-bar {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.Search {
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Search:hover {
+  background-color: #0056b3;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination a {
+  color: white;
+  text-decoration: none;
+}
+
+.pagination span {
+  padding: 0.5rem;
+  color: #333;
+}
+
+.pagination button:hover {
+  background-color: goldenrod;
+}
+
