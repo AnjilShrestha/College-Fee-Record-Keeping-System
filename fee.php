@@ -76,7 +76,7 @@ $_SESSION['url']=$_SERVER['REQUEST_URI'];
                             INNER JOIN course_tb c ON c.course_id=b.course_id 
                             LEFT JOIN pays p ON s.fee_id = p.fee_id AND p.student_id = st.student_id
                             WHERE b.batch_name='$batch' AND c.course_name='$course'
-                            GROUP BY s.rank asc";
+                            GROUP BY s.rank,s.fee_id asc";
                             $result = $connection->query($sql);
                             if ($result->num_rows > 0) {
                                 $i=1;
