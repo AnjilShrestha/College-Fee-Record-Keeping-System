@@ -1,12 +1,12 @@
 <?php
 require_once 'private/autoload.php';
-// search query and pagination parameters
+// search query parameters
 $search=isset($_GET['search'])?$_GET['search']:'';
 $searchCondition = '';
 if (!empty($search)) {
     $searchCondition = "AND (b.batch_name LIKE '%$search%' OR c.course_name LIKE '%$search%' OR b.startyear LIKE '%$search%')";
 }
-// fetching batch data with pagination and search
+// fetching batch data with search
 $sql = "SELECT b.*,c.course_name, IFNULL(COUNT(DISTINCT s.student_id), 0) AS student FROM batch_tb AS b 
 INNER JOIN course_tb AS c ON c.course_id=b.course_id LEFT JOIN student_tb AS s ON s.batch_id = b.batch_id 
 WHERE 1=1 $searchCondition GROUP BY b.status, b.batch_id";
@@ -57,7 +57,7 @@ $_SESSION['url']=$_SERVER['REQUEST_URI'];
                     </tr>
                     <?php
                     if ($result->num_rows > 0) {
-                        $i=1;
+                        $i = 1;
                         while ($row = $result->fetch_assoc()) {
                     ?>
                     <tr>
