@@ -1,21 +1,5 @@
 <?php
 require_once 'private/autoload.php';
-if (isset($_COOKIE['name'])) {
-    $cookie_value = $_COOKIE['name'];
-    if ($cookie_value) {
-        // Cookie is valid, you can proceed with the request
-        echo "Cookie is valid.";
-    } else {
-        // Invalid cookie value, redirect to login
-        header("Location: logout.php");
-        exit();
-    }
-} else {
-    // Cookie is not set, redirect to login
-    echo "Cookie is not valid.";
-    header("Location: logout.php");
-    exit();
-}
 if(!isset($_SESSION['user_type']) || $_SESSION['user_type']!=='admin' )
 {
   header('location:login.php');
