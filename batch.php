@@ -57,7 +57,7 @@ $_SESSION['url']=$_SERVER['REQUEST_URI'];
                     </tr>
                     <?php
                     if ($result->num_rows > 0) {
-                        $i = $start_from + 1;
+                        $i = 1;
                         while ($row = $result->fetch_assoc()) {
                     ?>
                     <tr>
